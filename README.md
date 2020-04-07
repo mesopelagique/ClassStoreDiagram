@@ -19,15 +19,28 @@ $diagram:=csDiagram(cs).dot()
 $txtSource:=$diagram.source
 ```
 
-### Get an svg using the remote service
+### Get an svg 
 
-[kroki.io/](https://kroki.io/) is a free service to convert diagrams to images. (It can be self hosted)
+### using the remote service kroki.io
+
+[kroki.io](https://kroki.io/) is a free service to convert diagrams to images. (It can be self hosted)
 
 ```4d
 $diagram.kroki().svg
 ```
 
-> Alternatively you can install cli tools to convert diagrams to images.
+### using web page
+
+Copy paste the diagram source into this online service
+
+- mermaid: https://mermaid-js.github.io/mermaid-live-editor
+- graphviz: https://dreampuf.github.io/GraphvizOnline/
+
+You could also make your own converter like this [example](Examples/WebGraph) using js libraries.
+
+### Install softwares
+
+Alternatively you can install cli tools to convert diagrams to images and use it to convert diagrams.
 
 ## Result for the provide example base
 
