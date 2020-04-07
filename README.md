@@ -1,4 +1,4 @@
-# ClassStoreGraph
+# ClassStoreDiagram
 
 Create class diagram from your class store
 
