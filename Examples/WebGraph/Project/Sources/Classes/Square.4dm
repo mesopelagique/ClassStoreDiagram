@@ -1,0 +1,1 @@
+Class extends Rectangle
