@@ -1,6 +1,6 @@
 # ClassStoreDiagram
 
-Create class diagram from your class store
+Create class diagram for your class store
 
 ## Usage
 
@@ -29,7 +29,7 @@ $txtSource:=$diagram.source
 $diagram.kroki().svg
 ```
 
-### using web page
+### using a web page
 
 Copy paste the diagram source into this online service
 
@@ -40,7 +40,7 @@ You could also make your own converter like this [example](Examples/WebGraph) us
 
 ### Install softwares
 
-Alternatively you can install cli tools to convert diagrams to images and use it to convert diagrams.
+Alternatively you can install cli tools to convert diagrams.
 
 ## Result for the provide example base
 
