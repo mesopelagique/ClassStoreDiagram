@@ -9,8 +9,8 @@ Create class diagram from your class store
 Choose a format between [mermaid](https://mermaid-js.github.io/mermaid/) and [graphiz dot](http://graphviz.org/)
 
 ```4d
-$diagram:=csGraph(cs).mermaid()
-$diagram:=csGraph(cs).dot()
+$diagram:=csDiagram(cs).mermaid()
+$diagram:=csDiagram(cs).dot()
 ```
 
 ### Get the diagram raw source
@@ -26,6 +26,8 @@ $txtSource:=$diagram.source
 ```4d
 $diagram.kroki().svg
 ```
+
+> Alternatively you can install cli tools to convert diagrams to images.
 
 ## Result for the provide example base
 

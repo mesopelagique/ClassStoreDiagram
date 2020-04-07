@@ -1,7 +1,7 @@
 ﻿{
 	"test": {
 		"methods": [
-			"test_csGraph"
+			"test_csDiagram"
 		]
 	},
 	"trash": {}
