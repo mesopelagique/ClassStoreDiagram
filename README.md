@@ -6,7 +6,7 @@ Create class diagram from your class store
 
 ### Get the diagram passing your cs
 
-Choose a format [mermaid](https://mermaid-js.github.io/mermaid/) or [graphiz dot](http://graphviz.org/)
+Choose a format between [mermaid](https://mermaid-js.github.io/mermaid/) and [graphiz dot](http://graphviz.org/)
 
 ```4d
 $diagram:=csGraph(cs).mermaid()
@@ -16,7 +16,7 @@ $diagram:=csGraph(cs).dot()
 ### Get the diagram raw source
 
 ```4d
-$txtSource:=diagram.source
+$txtSource:=$diagram.source
 ```
 
 ### Get an svg using the remote service
@@ -28,6 +28,16 @@ $diagram.kroki().svg
 ```
 
 ## Result for the provide example base
+
+[WebGraph database](Examples/WebGraph) contains some shape classes.
+
+The result of code
+
+```4d
+csGraph(cs).mermaid().source
+```
+
+is
 
 [![](https://mermaid.ink/img/eyJjb2RlIjoiY2xhc3NEaWFncmFtXG5cdGNsYXNzIFNxdWFyZSB7XG5cdH1cblx0Y2xhc3MgUmVjdGFuZ2xlIHtcblx0fVxuXHRjbGFzcyBTcGxpbmUge1xuXHR9XG5cdGNsYXNzIEVsbGlwc2Uge1xuXHR9XG5cdGNsYXNzIEVudGl0eVNlbGVjdGlvbiB7XG5cdH1cblx0Y2xhc3MgU2hhcGUge1xuXHR9XG5cdGNsYXNzIFBvbHlnb24ge1xuXHR9XG5cdGNsYXNzIENpcmNsZSB7XG5cdH1cblx0Y2xhc3MgRW50aXR5IHtcblx0fVxuXHRjbGFzcyBEYXRhQ2xhc3Mge1xuXHR9XG5cdGNsYXNzIF9EYXRhU3RvcmUge1xuXHR9XG5SZWN0YW5nbGUgPHwtLSBTcXVhcmVcblNoYXBlIDx8LS0gUmVjdGFuZ2xlXG5TaGFwZSA8fC0tIFNwbGluZVxuU2hhcGUgPHwtLSBFbGxpcHNlXG5PYmplY3QgPHwtLSBFbnRpdHlTZWxlY3Rpb25cbk9iamVjdCA8fC0tIFNoYXBlXG5TaGFwZSA8fC0tIFBvbHlnb25cblNoYXBlIDx8LS0gQ2lyY2xlXG5PYmplY3QgPHwtLSBFbnRpdHlcbk9iamVjdCA8fC0tIERhdGFDbGFzc1xuT2JqZWN0IDx8LS0gX0RhdGFTdG9yZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiY2xhc3NEaWFncmFtXG5cdGNsYXNzIFNxdWFyZSB7XG5cdH1cblx0Y2xhc3MgUmVjdGFuZ2xlIHtcblx0fVxuXHRjbGFzcyBTcGxpbmUge1xuXHR9XG5cdGNsYXNzIEVsbGlwc2Uge1xuXHR9XG5cdGNsYXNzIEVudGl0eVNlbGVjdGlvbiB7XG5cdH1cblx0Y2xhc3MgU2hhcGUge1xuXHR9XG5cdGNsYXNzIFBvbHlnb24ge1xuXHR9XG5cdGNsYXNzIENpcmNsZSB7XG5cdH1cblx0Y2xhc3MgRW50aXR5IHtcblx0fVxuXHRjbGFzcyBEYXRhQ2xhc3Mge1xuXHR9XG5cdGNsYXNzIF9EYXRhU3RvcmUge1xuXHR9XG5SZWN0YW5nbGUgPHwtLSBTcXVhcmVcblNoYXBlIDx8LS0gUmVjdGFuZ2xlXG5TaGFwZSA8fC0tIFNwbGluZVxuU2hhcGUgPHwtLSBFbGxpcHNlXG5PYmplY3QgPHwtLSBFbnRpdHlTZWxlY3Rpb25cbk9iamVjdCA8fC0tIFNoYXBlXG5TaGFwZSA8fC0tIFBvbHlnb25cblNoYXBlIDx8LS0gQ2lyY2xlXG5PYmplY3QgPHwtLSBFbnRpdHlcbk9iamVjdCA8fC0tIERhdGFDbGFzc1xuT2JqZWN0IDx8LS0gX0RhdGFTdG9yZVxuXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 
