@@ -1,4 +1,9 @@
 # ClassStoreDiagram
+[![language][code-shield]][code-url]
+[![language-top][code-top]][code-url]
+![code-size][code-size]
+[![release][release-shield]][release-url]
+[![license][license-shield]][license-url]
 
 Create class diagram for your class store
 
@@ -92,3 +97,14 @@ Object <|-- Entity
 Object <|-- DataClass
 Object <|-- _DataStore
 ```
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
+[code-top]: https://img.shields.io/github/languages/top/mesopelagique/ClassStoreDiagram.svg
+[code-size]: https://img.shields.io/github/languages/code-size/mesopelagique/ClassStoreDiagram.svg
+[code-url]: https://developer.4d.com/
+[release-shield]: https://img.shields.io/github/v/release/mesopelagique/ClassStoreDiagram
+[release-url]: https://github.com/mesopelagique/ClassStoreDiagram/releases/latest
+[license-shield]: https://img.shields.io/github/license/mesopelagique/ClassStoreDiagram
+[license-url]: LICENSE.md
