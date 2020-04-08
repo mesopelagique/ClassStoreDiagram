@@ -98,6 +98,42 @@ Object <|-- DataClass
 Object <|-- _DataStore
 ```
 
+## Installing
+
+On macOS open a terminal in your database root folder.
+
+### Using latest release
+
+Download the latest release and put  it into the `Components/` folder
+
+You could do it using this command in terminal.
+
+```bash
+mkdir -p Components && curl -L https://github.com/mesopelagique/CollectionUtils/releases/latest/download/ClassStoreDiagram.4DZ --output Components/ClassStoreDiagram.4dz
+```
+
+### Using git submodule
+
+#### to use source code
+
+```bash
+git submodule add https://github.com/mesopelagique/ClassStoreDiagram.git Components/ClassStoreDiagram.4dbase
+```
+
+#### to use binary
+
+```bash
+git submodule add https://github.com/mesopelagique/ClassStoreDiagram.git Components/ClassStoreDiagram
+```
+
+Open the project, for instance in macOS
+
+```bash
+open Components/ClassStoreDiagram/Project/ClassStoreDiagram.4DProject
+```
+
+Buil it to your database folder. A `Components/ClassStoreDiagram.4dbase` will be created with inside the `ClassStoreDiagram.4dz`
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
