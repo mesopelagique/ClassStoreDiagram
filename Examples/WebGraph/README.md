@@ -2,6 +2,9 @@
 
 Example database to provide class diagram using web server
 
+
+[![preview](https://res.cloudinary.com/marcomontalbano/image/upload/v1586333045/video_to_markdown/images/video--78cadd400963f697cc6359ea57c0bfcf-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://raw.githubusercontent.com/mesopelagique/ClassStoreDiagram/master/Examples/WebGraph/ClassDiagramMove.mp4 "preview")
+
 ## How it works?
 
 A method provide through the 4d server the diagram as plain text
