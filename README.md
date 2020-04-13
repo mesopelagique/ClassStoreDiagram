@@ -4,6 +4,7 @@
 ![code-size][code-size]
 [![release][release-shield]][release-url]
 [![license][license-shield]][license-url]
+[![discord][discord-shield]][discord-url]
 
 Create class diagram for your class store
 
@@ -144,3 +145,5 @@ Buil it to your database folder. A `Components/ClassStoreDiagram.4dbase` will be
 [release-url]: https://github.com/mesopelagique/ClassStoreDiagram/releases/latest
 [license-shield]: https://img.shields.io/github/license/mesopelagique/ClassStoreDiagram
 [license-url]: LICENSE.md
+[discord-shield]: https://img.shields.io/badge/chat-discord-7289DA?logo=discord&style=flat
+[discord-url]: https://discord.gg/dVTqZHr
