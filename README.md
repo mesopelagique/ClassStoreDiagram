@@ -110,7 +110,7 @@ Download the latest release and put  it into the `Components/` folder
 You could do it using this command in terminal.
 
 ```bash
-mkdir -p Components && curl -L https://github.com/mesopelagique/CollectionUtils/releases/latest/download/ClassStoreDiagram.4DZ --output Components/ClassStoreDiagram.4dz
+mkdir -p Components && curl -L https://github.com/mesopelagique/ClassStoreDiagram/releases/latest/download/ClassStoreDiagram.4DZ --output Components/ClassStoreDiagram.4dz
 ```
 
 ### Using git submodule
