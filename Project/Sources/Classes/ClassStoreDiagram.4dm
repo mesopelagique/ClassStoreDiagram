@@ -20,16 +20,26 @@ Function dot
 	
 	$output:="digraph{\n"
 	
+	If (This:C1470.ignore=Null:C1517)
+		This:C1470.ignore:=New collection:C1472()
+	End if 
+	
 	C_TEXT:C284($className)
 	For each ($className;This:C1470.cs)
-		$output:=$output+$className+"[shape=box];\n"
+		If (This:C1470.ignore.indexOf($className)<0)
+			$output:=$output+$className+"[shape=box];\n"
+		End if 
 	End for each 
 	
 	C_OBJECT:C1216($class)
 	For each ($className;This:C1470.cs)
-		$class:=This:C1470.cs[$className]
-		If ($class.superclass#Null:C1517)
-			$output:=$output+$className+"->"+$class.superclass.name+";\n"
+		If (This:C1470.ignore.indexOf($className)<0)
+			$class:=This:C1470.cs[$className]
+			If ($class.superclass#Null:C1517)
+				If (This:C1470.ignore.indexOf($class.superclass.name)<0)
+					$output:=$output+$className+"->"+$class.superclass.name+";\n"
+				End if 
+			End if 
 		End if 
 	End for each 
 	$output:=$output+"\n"
@@ -44,24 +54,33 @@ Function mermaid
 	
 	$output:="classDiagram\n"
 	
+	If (This:C1470.ignore=Null:C1517)
+		This:C1470.ignore:=New collection:C1472()
+	End if 
+	
 	C_TEXT:C284($className)
 	For each ($className;This:C1470.cs)
-		$output:=$output+"\tclass "+$className+" {\n"
+		If (This:C1470.ignore.indexOf($className)<0)
+			$output:=$output+"\tclass "+$className+" {\n"
 /*
 For each($functionName;$class.functions)
 $output:=$output+"\t\t"+$className+":"+$functionName+"() \n"
 End for each 
 */
-		$output:=$output+"\t}\n"
+			$output:=$output+"\t}\n"
+		End if 
 	End for each 
 	
 	C_OBJECT:C1216($class)
 	For each ($className;This:C1470.cs)
-		$class:=This:C1470.cs[$className]
-		If ($class.superclass#Null:C1517)
-			$output:=$output+$class.superclass.name+" <|-- "+$className+"\n"
+		If (This:C1470.ignore.indexOf($className)<0)
+			$class:=This:C1470.cs[$className]
+			If ($class.superclass#Null:C1517)
+				If (This:C1470.ignore.indexOf($class.superclass.name)<0)
+					$output:=$output+$class.superclass.name+" <|-- "+$className+"\n"
+				End if 
+			End if 
 		End if 
-		
 	End for each 
 	
 	$output:=$output+"\n"

@@ -19,7 +19,7 @@ If (($cmd="kroki") | (Position:C15("[class]";$method)=1))  // Just to not do it 
 	If ($configFile.exists)
 		$config:=JSON Parse:C1218($configFile.getText())
 	Else 
-		$config:=New object:C1471("format";"mermaid";"kroki";True:C214;"name";"classDiagram")
+		$config:=New object:C1471("format";"mermaid";"kroki";True:C214;"name";"classDiagram";"ignore";New collection:C1472("Object";"EntitySelection";"DataStore";"_DataStore";"Entity";"DataClass"))
 		$configFile.setText(JSON Stringify:C1217($config;*))
 	End if 
 	$file:=$docFolder.file(String:C10($config.name)+"."+$config.format)
@@ -29,6 +29,7 @@ Case of
 	: (($cmd="save") | ($cmd="create"))
 		If (Position:C15("[class]";$method)=1)
 			$csdiag:=csDiagram ($cs)
+			$csdiag.ignore:=$config.ignore
 			$diagram:=$csdiag[$config.format].call($csdiag)
 			$diagram.writeSource($file)
 		End if 
