@@ -5,9 +5,6 @@
     <macro name="" in_menu="false" type_ahead="false" version="2" method_event="on_create">
         <text><method>macro_csDiagram("<method_path/>";cs;"create")</method></text>
     </macro>
-    <macro name="" in_menu="false" type_ahead="false" version="2" method_event="on_close">
-        <text><method>macro_csDiagram("<method_path/>";cs;"close")</method></text>
-    </macro>
      <macro name="" in_menu="false" type_ahead="false" version="2" method_event="on_save">
         <text><method>macro_csDiagram("<method_path/>";cs;"save")</method></text>
     </macro>
