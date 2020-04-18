@@ -1,1 +1,12 @@
-{	"format": "mermaid",	"kroki": true,	"name": "classDiagram",	"ignore": [		"EntitySelection",		"DataStore",		"_DataStore",		"Entity",		"DataClass"	]}
+{
+	"format": "mermaid",
+	"kroki": true,
+	"name": "classDiagram",
+	"ignore": [
+		"EntitySelection",
+		"DataStore",
+		"_DataStore",
+		"Entity",
+		"DataClass"
+	]
+}
