@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE macros SYSTEM "http://www.4d.com/dtd/2007/macros.dtd" >
+
+<macros>
+    <macro name="" in_menu="false" type_ahead="false" version="2" method_event="on_create">
+        <text><method>macro_csDiagram("<method_path/>";cs;"create")</method></text>
+    </macro>
+    <macro name="" in_menu="false" type_ahead="false" version="2" method_event="on_close">
+        <text><method>macro_csDiagram("<method_path/>";cs;"close")</method></text>
+    </macro>
+     <macro name="" in_menu="false" type_ahead="false" version="2" method_event="on_save">
+        <text><method>macro_csDiagram("<method_path/>";cs;"save")</method></text>
+    </macro>
+    <macro  name="run kroki" in_menu="false" in_toolbar="false" type_ahead="true">
+        <text><method>macro_csDiagram("<method_path/>";cs;"kroki")</method></text>
+    </macro>
+</macros>

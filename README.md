@@ -99,6 +99,17 @@ Object <|-- DataClass
 Object <|-- _DataStore
 ```
 
+## Macro
+
+`macro_csDiagram` will generate a diagram each time you create or save a class into `Documentation/classDiagram.mermaid` file ([ex](Documentation/classDiagram.mermaid)).
+
+Then each time you close a class and type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg` file ([ex](Documentation/classDiagram.svg)).
+
+Then you can display it in your documentation:
+![svg](Documentation/classDiagram.svg)
+
+> A .csDiagram.json file will be create into your root database folder. You can put `"kroki": false` if you do not want svg convertion.
+
 ## Installing
 
 On macOS open a terminal in your database root folder.

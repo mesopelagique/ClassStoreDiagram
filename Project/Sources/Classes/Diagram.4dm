@@ -1,9 +1,7 @@
-
 Class constructor
 	C_TEXT:C284($1;$2)
 	This:C1470.type:=$1
 	This:C1470.source:=$2
-	
 	
 Function kroki
 	  // Use "https://kroki.io/" api to get svg
@@ -23,4 +21,13 @@ Function kroki
 	$0:=New object:C1471("success";$result=200)
 	If ($0.success)
 		$0.svg:=BLOB to text:C555($blobResponse;UTF8 text without length:K22:17)
+		This:C1470.svg:=$0.svg
 	End if 
+	
+Function writeSource
+	ASSERT:C1129(OB Instance of:C1731($1;4D:C1709.File))
+	$1.setText(This:C1470.source)
+	
+Function writeSvg
+	ASSERT:C1129(OB Instance of:C1731($1;4D:C1709.File))
+	$1.setText(This:C1470.svg)
