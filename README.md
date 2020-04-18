@@ -106,7 +106,7 @@ You can find macro file [here](Macros%20v2/ClassStoreDiagram_Macros.xml)
 `macro_csDiagram` will generate a diagram each time you create or save a class into `Documentation/classDiagram.mermaid`.
 [ex](Documentation/classDiagram.mermaid)
 
-Then each time you close a class and type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg`.
+Then each time you close a class or type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg`.
 [ex](Documentation/classDiagram.svg)
 
 Then you can display it in your documentation:
