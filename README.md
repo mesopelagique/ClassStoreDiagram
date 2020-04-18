@@ -55,7 +55,7 @@ Alternatively you can install cli tools to convert diagrams.
 The result of code
 
 ```4d
-csGraph(cs).mermaid().source
+cscsDiagram(cs).mermaid().source
 ```
 
 is
@@ -104,15 +104,29 @@ Object <|-- _DataStore
 You can find macro file [here](Macros%20v2/ClassStoreDiagram_Macros.xml)
 
 `macro_csDiagram` will generate a diagram each time you create or save a class into `Documentation/classDiagram.mermaid`.
-[ex](Documentation/classDiagram.mermaid)
+[classDiagram.mermaid example](Documentation/classDiagram.mermaid)
 
 Then each time you close a class or type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg`.
-[ex](Documentation/classDiagram.svg)
+[classDiagram.svg) example](Documentation/classDiagram.svg)
 
 Then you can display it in your documentation:
 ![svg](Documentation/classDiagram.svg)
 
 > A .csDiagram.json file will be create into your root database folder. You can put `"kroki": false` if you do not want svg convertion.
+
+## Ignore classes
+
+You could ignore some class by defining a list of ignored class name
+
+```4d
+$csDiagram:=csDiagram(cs)
+$csDiagram.ignore:=New collection("Object";"MyPrivateClass")
+```
+
+### macro
+
+In configuration file `.csDiagram.json` you could also define the list of ignored class name.
+[.csDiagram.json example](.csDiagram.json)
 
 ## Installing
 
