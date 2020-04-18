@@ -6,7 +6,7 @@
 [![license][license-shield]][license-url]
 [![discord][discord-shield]][discord-url]
 
-Create class diagram for your class store
+Create class diagram for your class store.
 
 ## Usage
 
@@ -101,9 +101,13 @@ Object <|-- _DataStore
 
 ## Macro
 
-`macro_csDiagram` will generate a diagram each time you create or save a class into `Documentation/classDiagram.mermaid` file ([ex](Documentation/classDiagram.mermaid)).
+You can find macro file [here](Macros%20v2/ClassStoreDiagram_Macros.xml)
 
-Then each time you close a class and type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg` file ([ex](Documentation/classDiagram.svg)).
+`macro_csDiagram` will generate a diagram each time you create or save a class into `Documentation/classDiagram.mermaid`.
+[ex](Documentation/classDiagram.mermaid)
+
+Then each time you close a class and type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg`.
+[ex](Documentation/classDiagram.svg)
 
 Then you can display it in your documentation:
 ![svg](Documentation/classDiagram.svg)
