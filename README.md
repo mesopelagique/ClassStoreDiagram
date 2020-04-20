@@ -164,6 +164,10 @@ open Components/ClassStoreDiagram/Project/ClassStoreDiagram.4DProject
 
 Buil it to your database folder. A `Components/ClassStoreDiagram.4dbase` will be created with inside the `ClassStoreDiagram.4dz`
 
+---
+
+[<img src="https://mesopelagique.github.io/quatred.png" alt="mesopelagique"/>](https://mesopelagique.github.io/)
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [code-shield]: https://img.shields.io/static/v1?label=language&message=4d&color=blue
