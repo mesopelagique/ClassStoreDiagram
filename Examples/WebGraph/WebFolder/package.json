@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "mermaid": "^8.4.8"
+    "mermaid": "^8.13.8"
   },
   "devDependencies": {
     "webpack": "^4.42.1",
