@@ -103,8 +103,8 @@ Object <|-- _DataStore
 
 You can find macro file [here](Macros%20v2/ClassStoreDiagram_Macros.xml)
 
-`macro_csDiagram` will generate a diagram each time you create or save a class into `Documentation/classDiagram.mermaid`.
-[classDiagram.mermaid example](Documentation/classDiagram.mermaid)
+`macro_csDiagram` will generate diagrams each time you create or save a class 
+into [`Documentation/classDiagram.md`](Documentation/classDiagram.md) and [`Documentation/classDiagram.mermaid`](Documentation/classDiagram.mermaid).
 
 Then each time you close a class or type in code `run kroki`, the svg will be saved into `Documentation/classDiagram.svg`.
 [classDiagram.svg) example](Documentation/classDiagram.svg)
