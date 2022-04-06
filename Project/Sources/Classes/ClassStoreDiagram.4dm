@@ -1,23 +1,18 @@
 
-Class constructor
-	  // Initialize with a class store
-	C_OBJECT:C1216($1)
-	This:C1470.cs:=$1
+Class constructor($classStore : Object)
+	// Initialize with a class store
+	This:C1470.cs:=$classStore
 	
-Function formats
-	  /// Return the list of supported format 
-	C_COLLECTION:C1488($0)
-	$0:=New collection:C1472("dot";"mermaid")
+Function formats()->$formats : Collection
+	/// Return the list of supported format 
+	$formats:=New collection:C1472("graphviz"; "mermaid")
 	
-Function graphviz
-	C_OBJECT:C1216($0)
-	$0:=This:C1470.dot()
+Function graphviz()->$dot : cs:C1710.Diagram
+	$dot:=This:C1470.dot()
 	
-Function dot
-	  /// Return class diagram in dot format
-	C_OBJECT:C1216($0)
-	C_TEXT:C284($output)
-	
+Function dot()->$diagram : cs:C1710.Diagram
+	/// Return class diagram in dot format
+	var $output : Text
 	$output:="digraph{\n"
 	
 	If (This:C1470.ignore=Null:C1517)
@@ -25,14 +20,14 @@ Function dot
 	End if 
 	
 	C_TEXT:C284($className)
-	For each ($className;This:C1470.cs)
+	For each ($className; This:C1470.cs)
 		If (This:C1470.ignore.indexOf($className)<0)
 			$output:=$output+$className+"[shape=box];\n"
 		End if 
 	End for each 
 	
 	C_OBJECT:C1216($class)
-	For each ($className;This:C1470.cs)
+	For each ($className; This:C1470.cs)
 		If (This:C1470.ignore.indexOf($className)<0)
 			$class:=This:C1470.cs[$className]
 			If ($class.superclass#Null:C1517)
@@ -45,21 +40,20 @@ Function dot
 	$output:=$output+"\n"
 	$output:=$output+"}"
 	
-	$0:=cs:C1710.Diagram.new("graphviz";$output)
+	$diagram:=cs:C1710.Diagram.new("graphviz"; $output)
 	
-Function mermaid
-	  /// Return class diagram in mermaid format
-	C_OBJECT:C1216($0)
-	C_TEXT:C284($output)
+Function mermaid()->$diagram : cs:C1710.Diagram
+	/// Return class diagram in mermaid format
 	
+	var $output : Text
 	$output:="classDiagram\n"
 	
 	If (This:C1470.ignore=Null:C1517)
 		This:C1470.ignore:=New collection:C1472()
 	End if 
 	
-	C_TEXT:C284($className)
-	For each ($className;This:C1470.cs)
+	var $className : Text
+	For each ($className; This:C1470.cs)
 		If (This:C1470.ignore.indexOf($className)<0)
 			$output:=$output+"\tclass "+$className+" {\n"
 /*
@@ -71,8 +65,8 @@ End for each
 		End if 
 	End for each 
 	
-	C_OBJECT:C1216($class)
-	For each ($className;This:C1470.cs)
+	var $class : Object
+	For each ($className; This:C1470.cs)
 		If (This:C1470.ignore.indexOf($className)<0)
 			$class:=This:C1470.cs[$className]
 			If ($class.superclass#Null:C1517)
@@ -85,5 +79,5 @@ End for each
 	
 	$output:=$output+"\n"
 	
-	$0:=cs:C1710.Diagram.new("mermaid";$output)
+	$diagram:=cs:C1710.Diagram.new("mermaid"; $output)
 	

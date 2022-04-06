@@ -2,8 +2,8 @@
 C_TEXT:C284($string)
 C_OBJECT:C1216($diagram)
 
-C_OBJECT:C1216($𐂷)
-$𐂷:=csDiagram (cs:C1710)
+C_OBJECT:C1216($s𐂷)
+$𐂷:=csDiagram(cs:C1710)
 
 /**
 dot

@@ -1,3 +1,6 @@
+# Class store diagram
+
+```mermaid
 classDiagram
 	class Diagram {
 	}
@@ -6,3 +9,5 @@ classDiagram
 Object <|-- Diagram
 Object <|-- ClassStoreDiagram
 
+
+```

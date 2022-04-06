@@ -1,0 +1,138 @@
+{
+	"_method_": {
+		"macro_csDiagram": {
+			"Syntax": "**macro_csDiagram**(*method* : Text; *cs* : Object; *cmd* : Text)",
+			"Params": [
+				[
+					"method",
+					"Text",
+					"->"
+				],
+				[
+					"cs",
+					"Object",
+					"->"
+				],
+				[
+					"cmd",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"csDiagram": {
+			"Syntax": "**csDiagram**()",
+			"Params": [],
+			"Summary": ""
+		}
+	},
+	"ClassStoreDiagram": {
+		"new()": {
+			"Syntax": "**.new**(*classStore* : Object)",
+			"Params": [
+				[
+					"classStore",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"dot()": {
+			"Syntax": "**.dot**()->diagram : cs.Diagram.Diagram",
+			"Params": [
+				[
+					"diagram",
+					"cs.Diagram.Diagram",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"mermaid()": {
+			"Syntax": "**.mermaid**()->diagram : cs.Diagram.Diagram",
+			"Params": [
+				[
+					"diagram",
+					"cs.Diagram.Diagram",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"graphviz()": {
+			"Syntax": "**.graphviz**()->dot : cs.Diagram.Diagram",
+			"Params": [
+				[
+					"dot",
+					"cs.Diagram.Diagram",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"formats()": {
+			"Syntax": "**.formats**()->formats : Collection",
+			"Params": [
+				[
+					"formats",
+					"Collection",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"Diagram": {
+		"new()": {
+			"Syntax": "**.new**(*type* : Text; *source* : Text)",
+			"Params": [
+				[
+					"type",
+					"Text",
+					"->"
+				],
+				[
+					"source",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"writeSvg()": {
+			"Syntax": "**.writeSvg**(*file* : 4D.File)",
+			"Params": [
+				[
+					"file",
+					"4D.File",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"writeSource()": {
+			"Syntax": "**.writeSource**(*file* : 4D.File)",
+			"Params": [
+				[
+					"file",
+					"4D.File",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"kroki()": {
+			"Syntax": "**.kroki**()->response : Object",
+			"Params": [
+				[
+					"response",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	}
+}

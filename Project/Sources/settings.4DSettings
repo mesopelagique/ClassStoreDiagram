@@ -1,9 +1,21 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="6">
 	<com.4d>
 		<web>
 			<standalone_server>
 				<configuration https_port_number="8443" port_number="8080"/>
 			</standalone_server>
 		</web>
+		<general component_classStore_name="Diagram"/>
+		<server>
+			<network>
+				<options publication_name="ClassStoreDiagram" use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<database>
+			<misc mac_use_lf="true" no_bom="true" prefer_null_than_blank_values="false"/>
+		</database>
+		<compiler>
+			<options syntax_file="true"/>
+		</compiler>
 	</com.4d>
 </preferences>
